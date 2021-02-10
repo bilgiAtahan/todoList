@@ -6,7 +6,7 @@
 
 body {
     background-color: #457b9d;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 460px;
-    transition: opacity 0.9s ease;
+    transition: display 0.9s ease;
 }
 
 #list span {
@@ -60,9 +60,8 @@ body {
 }
 
 #list span h3 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
-    letter-spacing: 1px;
     margin: auto 0px;
 }
 
@@ -98,4 +97,8 @@ body {
 
 #deleteAll:focus {
     outline: none;
+}
+
+.transitionForDelete {
+    display: none;
 }
