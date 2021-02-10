@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #457b9d;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto 0 auto;
+    width: 465px;
+}
+
+.input-bar input[type="text"] {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    background: #a8dadc;
+    box-shadow: 5px 5px 8px #1d3557;
+}
+
+.input-bar button {
+    background: #e63946;
+    color: #f1faee;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+    box-shadow: 5px 5px 8px #1d3557;
+    cursor: pointer;
+}
+
+.input-bar button:hover {
+    background: #e63947ec;
+}
+
+#list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    transition: opacity 0.9s ease;
+}
+
+#list span {
+    padding: 8px 5px;
+    margin-top: 10px;
+    background: #a8dadc;
+    border: 2px solid #1d3557;
+    display: flex;
+    position: relative;
+}
+
+#list span h3 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: auto 0px;
+}
+
+#list span .delete-btn {
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#list span img {
+    position: absolute;
+    left: 93.6%;
+}
+
+#deleteAll {
+    margin-left: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #1d3557;
+    color: #f1faee;
+    cursor: pointer;
+    border-left: none;
+    border-top: none;
+}
+
+#deleteAll:hover {
+    background-color: #223f66;
+}
+
+#deleteAll:focus {
+    outline: none;
+}
