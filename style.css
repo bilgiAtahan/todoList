@@ -23,12 +23,12 @@ body {
     height: 30px;
     padding: 5px;
     outline: none;
-    background: #a8dadc;
+    background-color: #a8dadc;
     box-shadow: 5px 5px 8px #1d3557;
 }
 
 .input-bar button {
-    background: #e63946;
+    background-color: #e63946;
     color: #f1faee;
     width: 100px;
     height: 30px;
@@ -47,13 +47,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 460px;
-    transition: display 0.9s ease;
 }
 
 #list span {
-    padding: 8px 5px;
     margin-top: 10px;
-    background: #a8dadc;
+    padding: 8px 5px;
+    background-color: #a8dadc;
     border: 2px solid #1d3557;
     display: flex;
     position: relative;
@@ -86,9 +85,9 @@ body {
     height: 30px;
     background-color: #1d3557;
     color: #f1faee;
-    cursor: pointer;
     border-left: none;
     border-top: none;
+    cursor: pointer; 
 }
 
 #deleteAll:hover {
@@ -99,6 +98,16 @@ body {
     outline: none;
 }
 
-.transitionForDelete {
-    display: none;
+#list .date{
+    display: flex;
+    width: 200px;
+    margin: 0;
+    padding: 2px 0;
+    border: none;
+    margin-left: auto;
+    justify-content: flex-end;
+    background-color: #457b9d;
+    font-size: 13px;
+    color: #f1faee;
+    opacity: 0.5;
 }
