@@ -14,8 +14,13 @@ send.onclick = () => {
 
         let today = new Date();
         let monthOfToday = today.getMonth() + 1;
-        let dateOftext = today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- " +
-            today.getHours() + ":" + today.getMinutes();
+        let dateOftext = ""
+        if (today.getHours() < 10)
+            dateOftext += today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- 0" +
+                today.getHours() + ":" + today.getMinutes();
+        if (today.getMinutes() < 10)
+            dateOftext += today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- " +
+                today.getHours() + ":0" + today.getMinutes();
 
         btn.className = "delete-btn"
         span.className = "listContent"
@@ -37,7 +42,7 @@ send.onclick = () => {
             list.removeChild(date)
         }
     }
-    else{
+    else {
         alert("You can write character until 48")
     }
 }
