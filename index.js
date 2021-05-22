@@ -5,7 +5,7 @@ const deleteAll = document.querySelector("#deleteAll")
 const listContent = document.querySelectorAll(".listContent")
 
 send.onclick = () => {
-    if (text.value.length < 48) {
+    if (text.value.length < 48 && text.value.length !== 0) {
         let span = document.createElement("span")
         let btn = document.createElement("BUTTON")
         let listText = document.createElement("h3")
@@ -14,10 +14,8 @@ send.onclick = () => {
 
         let today = new Date();
         let monthOfToday = today.getMonth() + 1;
-        let dateOftext = ""
-        if (today.getHours() < 10)
-            dateOftext += today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- 0" +
-                today.getHours() + ":" + today.getMinutes();
+        let dateOftext = today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- " +
+            today.getHours() + ":" + today.getMinutes();
         if (today.getMinutes() < 10)
             dateOftext += today.getDate() + " " + monthOfToday + " " + today.getFullYear() + "- " +
                 today.getHours() + ":0" + today.getMinutes();
@@ -43,7 +41,7 @@ send.onclick = () => {
         }
     }
     else {
-        alert("You can write character until 48")
+        alert("You wrote wrong text")
     }
 }
 
